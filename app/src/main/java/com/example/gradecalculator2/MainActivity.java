@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         exam = findViewById(R.id.examGrade);
         level = findViewById(R.id.classLevel);
 
-        semester = findViewById(R.id.quarter2Grade);
-        semesterExam = findViewById(R.id.quarter2Grade);
-        minimum = findViewById(R.id.quarter2Grade);
-        maximum = findViewById(R.id.quarter2Grade);
-        passing = findViewById(R.id.quarter2Grade);
-        gradepa = findViewById(R.id.quarter2Grade);
+        semester = findViewById(R.id.semesterGrade);
+        semesterExam = findViewById(R.id.semesterExamGrade);
+        minimum = findViewById(R.id.minimumGrade);
+        maximum = findViewById(R.id.maximumGrade);
+        passing = findViewById(R.id.passingGrade);
+        gradepa = findViewById(R.id.gpaGrade);
 
         calculate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -84,7 +84,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/semesterExam"
+        android:id="@+id/semesterExamGrade"
         android:layout_width="80dp"
         android:layout_height="48dp"
         android:layout_marginTop="128dp"
@@ -95,46 +95,46 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/semesterGradeText"
+        android:id="@+id/semesterGrade"
         android:layout_width="80dp"
         android:layout_height="48dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/semesterExam"
-        app:layout_constraintTop_toTopOf="@+id/semesterExam" />
+        app:layout_constraintEnd_toStartOf="@+id/semesterExamGrade"
+        app:layout_constraintTop_toTopOf="@+id/semesterExamGrade" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/semesterExam"
-        app:layout_constraintTop_toBottomOf="@+id/semesterExam" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/maximumGrade"
         android:layout_width="80dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/semesterGradeText"
-        app:layout_constraintTop_toBottomOf="@+id/semesterGradeText" />
+        app:layout_constraintEnd_toEndOf="@+id/semesterExamGrade"
+        app:layout_constraintTop_toBottomOf="@+id/semesterExamGrade" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/minimumGrade"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/semesterGrade"
+        app:layout_constraintTop_toBottomOf="@+id/semesterGrade" />
+
+    <TextView
+        android:id="@+id/passingGrade"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintEnd_toEndOf="@+id/maximumGrade"
+        app:layout_constraintTop_toBottomOf="@+id/maximumGrade" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/gpaGrade"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintEnd_toEndOf="@+id/passingGrade"
+        app:layout_constraintTop_toBottomOf="@+id/passingGrade" />
 </androidx.constraintlayout.widget.ConstraintLayout>
