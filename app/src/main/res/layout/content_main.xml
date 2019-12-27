@@ -8,13 +8,133 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <EditText
+        android:id="@+id/quarter1Grade"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quarter 1 Grade"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/quarter2Grade"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quarter 2 Grade"
+        app:layout_constraintStart_toStartOf="@+id/quarter1Grade"
+        app:layout_constraintTop_toBottomOf="@+id/quarter1Grade" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginBottom="213dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/examGrade"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Exam Grade"
+        app:layout_constraintStart_toStartOf="@+id/quarter2Grade"
+        app:layout_constraintTop_toBottomOf="@+id/quarter2Grade" />
+
+    <EditText
+        android:id="@+id/classLevel"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Class Level"
+        app:layout_constraintStart_toStartOf="@+id/examGrade"
+        app:layout_constraintTop_toBottomOf="@+id/examGrade" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Grade Calculator"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/semesterExamGrade"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/semesterGrade"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/semesterExamGrade"
+        app:layout_constraintTop_toTopOf="@+id/semesterExamGrade" />
+
+    <TextView
+        android:id="@+id/maximumGrade"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/semesterExamGrade"
+        app:layout_constraintTop_toBottomOf="@+id/semesterExamGrade" />
+
+    <TextView
+        android:id="@+id/minimumGrade"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/semesterGrade"
+        app:layout_constraintTop_toBottomOf="@+id/semesterGrade" />
+
+    <TextView
+        android:id="@+id/passingGrade"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/maximumGrade"
+        app:layout_constraintTop_toBottomOf="@+id/maximumGrade" />
+
+    <TextView
+        android:id="@+id/gpaGrade"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/passingGrade"
+        app:layout_constraintTop_toBottomOf="@+id/passingGrade" />
 </androidx.constraintlayout.widget.ConstraintLayout>
