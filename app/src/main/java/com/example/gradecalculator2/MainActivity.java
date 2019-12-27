@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        calculate = findViewById(R.id.calculate);
+
         quarter1 = findViewById(R.id.quarter1Grade);
         quarter2 = findViewById(R.id.quarter2Grade);
         exam = findViewById(R.id.examGrade);
