@@ -16,8 +16,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="128dp"
         android:ems="10"
+        android:hint="Quarter 1 Grade"
         android:inputType="textPersonName"
-        android:text="Quarter 1 Grade"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,8 +27,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Quarter 2 Grade"
         android:inputType="textPersonName"
-        android:text="Quarter 2 Grade"
         app:layout_constraintStart_toStartOf="@+id/quarter1Grade"
         app:layout_constraintTop_toBottomOf="@+id/quarter1Grade" />
 
@@ -52,8 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Exam Grade"
         android:inputType="textPersonName"
-        android:text="Exam Grade"
         app:layout_constraintStart_toStartOf="@+id/quarter2Grade"
         app:layout_constraintTop_toBottomOf="@+id/quarter2Grade" />
 
@@ -63,8 +63,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Class Level"
         android:inputType="textPersonName"
-        android:text="Class Level"
         app:layout_constraintStart_toStartOf="@+id/examGrade"
         app:layout_constraintTop_toBottomOf="@+id/examGrade" />
 
@@ -90,7 +90,6 @@
         android:layout_marginTop="128dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,7 +97,6 @@
         android:id="@+id/semesterGrade"
         android:layout_width="80dp"
         android:layout_height="48dp"
-        android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/semesterExamGrade"
         app:layout_constraintTop_toTopOf="@+id/semesterExamGrade" />
 
@@ -107,7 +105,6 @@
         android:layout_width="80dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/semesterExamGrade"
         app:layout_constraintTop_toBottomOf="@+id/semesterExamGrade" />
 
@@ -116,7 +113,6 @@
         android:layout_width="80dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/semesterGrade"
         app:layout_constraintTop_toBottomOf="@+id/semesterGrade" />
 
@@ -125,7 +121,6 @@
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/maximumGrade"
         app:layout_constraintTop_toBottomOf="@+id/maximumGrade" />
 
@@ -134,7 +129,6 @@
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/passingGrade"
         app:layout_constraintTop_toBottomOf="@+id/passingGrade" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText quarter1;
@@ -68,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
                 double e = Double.parseDouble(exam.getText().toString());
                 double lvl = Double.parseDouble(level.getText().toString());
 
-                double s1 = ( q1 + q2 ) / 2;
-                double s1e = ( q1 * 3 + q2 * 3 + e ) / 7;
-                double min = ( 6 * s1 ) / 7;
-                double max = ( 6 * s1 + 100 ) / 7;
-                double pass = -6 * s1 + 490;
-                double gpa = lvl + ( 6 * s1 + e - 490 ) / 70;
+                double s1 = Math.round(( q1 + q2 ) / 2 * 100.0) / 100.0;
+                double s1e = Math.round(( q1 * 3 + q2 * 3 + e ) / 7 * 100.0) / 100.0;
+                double min = Math.round(( 6 * s1 ) / 7 * 100.0) / 100.0;
+                double max = Math.round(( 6 * s1 + 100 ) / 7 * 100.0) / 100.0;
+                double pass = Math.round((-6 * s1 + 490 ) * 100.0) / 100.0;
+                double gpa = Math.round((lvl + ( 6 * s1 + e - 490 ) / 70 ) * 100.0) / 100.0;
 
                 semester.setText(Double.toString(s1));
                 semesterExam.setText(Double.toString(s1e));
